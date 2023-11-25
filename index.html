@@ -1,0 +1,26 @@
+"!THIS FILE SHOULD BE OPENED VIA NOTEPAD FOR CLARITY!"
+
+Bash
+1. sudo apt update
+Bash
+2. sudo apt install apt-transport-https ca-certificates curl software-properties-common
+Bash
+3. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+Bash
+4. echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+Bash
+5. sudo apt update
+Bash
+6. sudo apt install docker-ce docker-ce-cli containerd.io
+Bash
+7. sudo docker run hello-world
+
+Bash							Manage Docker Without Sudo (Optional)
+1. sudo usermod -aG docker <username>
+Bash
+2. sudo apt install docker-compose
+Bash
+3. docker-compose --version
+
+
+If any problems occur i would be happy to solve them together
